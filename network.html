@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.1.4/cytoscape.js"></script>
+    <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-cola/1.6.0/cola.js"></script>
+    <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-cola/1.6.0/cytoscape-cola.js"></script>    <style>
+body {
+  font-family: helvetica;
+  font-size: 14px;
+}
+#cy {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+h1 {
+  opacity: 0.5;
+  font-size: 1em;
+}  
+    </style>
+  </head>
+<body>
+  <div id="cy"/>
+  <script>
+    var cy = cytoscape({
+      container: document.getElementById('cy'),
+      style: [
+        {
+          selector: 'node',
+          style: {
+            'label': 'data(id)',
+            'background-color': 'data(faveColor)',
+            'color': 'black'
+          }
+        }
+      ],
+      elements:
+        [
+{ data: { id: 'PMC3841577', faveColor: 'red' } }, { data: { id: 'Acinetobacter baumannii', faveColor: 'green'  } }, { data: { id: 'e981162931', source: 'PMC3841577', target: 'Acinetobacter baumannii' } },
+{ data: { id: 'PMC3841577', faveColor: 'red' } }, { data: { id: 'E. coli', faveColor: 'green'  } }, { data: { id: 'e534625587', source: 'PMC3841577', target: 'E. coli' } },
+{ data: { id: 'PMC3841577', faveColor: 'red' } }, { data: { id: 'Enterobacter cloacae', faveColor: 'green'  } }, { data: { id: 'e2055312211', source: 'PMC3841577', target: 'Enterobacter cloacae' } },
+{ data: { id: 'PMC3841577', faveColor: 'red' } }, { data: { id: 'Escherichia coli', faveColor: 'green'  } }, { data: { id: 'e1575606416', source: 'PMC3841577', target: 'Escherichia coli' } },
+{ data: { id: 'PMC3841577', faveColor: 'red' } }, { data: { id: 'NM-300', faveColor: 'blue'  } }, { data: { id: 'e1081596686', source: 'PMC3841577', target: 'NM-300' } },
+{ data: { id: 'PMC3841577', faveColor: 'red' } }, { data: { id: 'NM300', faveColor: 'blue'  } }, { data: { id: 'e866168537', source: 'PMC3841577', target: 'NM300' } },
+{ data: { id: 'PMC3841577', faveColor: 'red' } }, { data: { id: 'Pseudomonas stutzeri', faveColor: 'green'  } }, { data: { id: 'e733316049', source: 'PMC3841577', target: 'Pseudomonas stutzeri' } },
+{ data: { id: 'PMC3841577', faveColor: 'red' } }, { data: { id: 'P. stutzeri', faveColor: 'green'  } }, { data: { id: 'e1343958775', source: 'PMC3841577', target: 'P. stutzeri' } },
+{ data: { id: 'PMC4105399', faveColor: 'red' } }, { data: { id: 'NM-100', faveColor: 'blue'  } }, { data: { id: 'e113805838', source: 'PMC4105399', target: 'NM-100' } },
+{ data: { id: 'PMC4105399', faveColor: 'red' } }, { data: { id: 'NM-101', faveColor: 'blue'  } }, { data: { id: 'e113805839', source: 'PMC4105399', target: 'NM-101' } },
+{ data: { id: 'PMC4105399', faveColor: 'red' } }, { data: { id: 'NM-102', faveColor: 'blue'  } }, { data: { id: 'e113805840', source: 'PMC4105399', target: 'NM-102' } },
+{ data: { id: 'PMC4105399', faveColor: 'red' } }, { data: { id: 'NM-103', faveColor: 'blue'  } }, { data: { id: 'e113805841', source: 'PMC4105399', target: 'NM-103' } },
+{ data: { id: 'PMC4105399', faveColor: 'red' } }, { data: { id: 'NM-104', faveColor: 'blue'  } }, { data: { id: 'e113805842', source: 'PMC4105399', target: 'NM-104' } },
+{ data: { id: 'PMC4105399', faveColor: 'red' } }, { data: { id: 'NM-105', faveColor: 'blue'  } }, { data: { id: 'e113805843', source: 'PMC4105399', target: 'NM-105' } },
+{ data: { id: 'PMC4219084', faveColor: 'red' } }, { data: { id: 'NM-220', faveColor: 'blue'  } }, { data: { id: 'e1196886146', source: 'PMC4219084', target: 'NM-220' } },
+{ data: { id: 'PMC4440714', faveColor: 'red' } }, { data: { id: 'NM-103', faveColor: 'blue'  } }, { data: { id: 'e1249231778', source: 'PMC4440714', target: 'NM-103' } },
+{ data: { id: 'PMC4440714', faveColor: 'red' } }, { data: { id: 'NM-104', faveColor: 'blue'  } }, { data: { id: 'e1249231777', source: 'PMC4440714', target: 'NM-104' } },
+{ data: { id: 'PMC4440714', faveColor: 'red' } }, { data: { id: 'NM-110', faveColor: 'blue'  } }, { data: { id: 'e1249231750', source: 'PMC4440714', target: 'NM-110' } },
+{ data: { id: 'PMC4440714', faveColor: 'red' } }, { data: { id: 'NM-111', faveColor: 'blue'  } }, { data: { id: 'e1249231749', source: 'PMC4440714', target: 'NM-111' } },
+{ data: { id: 'PMC4440714', faveColor: 'red' } }, { data: { id: 'NM-200', faveColor: 'blue'  } }, { data: { id: 'e1249230820', source: 'PMC4440714', target: 'NM-200' } },
+{ data: { id: 'PMC4440714', faveColor: 'red' } }, { data: { id: 'NM-203', faveColor: 'blue'  } }, { data: { id: 'e1249230817', source: 'PMC4440714', target: 'NM-203' } },
+{ data: { id: 'PMC4555363', faveColor: 'red' } }, { data: { id: 'NM-105', faveColor: 'blue'  } }, { data: { id: 'e1728203983', source: 'PMC4555363', target: 'NM-105' } },
+{ data: { id: 'PMC4555363', faveColor: 'red' } }, { data: { id: 'NM-211', faveColor: 'blue'  } }, { data: { id: 'e1728202995', source: 'PMC4555363', target: 'NM-211' } },
+{ data: { id: 'PMC4555363', faveColor: 'red' } }, { data: { id: 'NM-212', faveColor: 'blue'  } }, { data: { id: 'e1728202994', source: 'PMC4555363', target: 'NM-212' } },
+{ data: { id: 'PMC4555363', faveColor: 'red' } }, { data: { id: 'Rodent osteopontin', faveColor: 'green'  } }, { data: { id: 'e1380551857', source: 'PMC4555363', target: 'Rodent osteopontin' } },
+{ data: { id: 'PMC4603643', faveColor: 'red' } }, { data: { id: 'NM-212', faveColor: 'blue'  } }, { data: { id: 'e1129320529', source: 'PMC4603643', target: 'NM-212' } },
+{ data: { id: 'PMC4630844', faveColor: 'red' } }, { data: { id: 'Daphnia magna', faveColor: 'green'  } }, { data: { id: 'e1657538436', source: 'PMC4630844', target: 'Daphnia magna' } },
+{ data: { id: 'PMC4630844', faveColor: 'red' } }, { data: { id: 'NM-103', faveColor: 'blue'  } }, { data: { id: 'e68105735', source: 'PMC4630844', target: 'NM-103' } },
+{ data: { id: 'PMC4630844', faveColor: 'red' } }, { data: { id: 'NM-105', faveColor: 'blue'  } }, { data: { id: 'e68105733', source: 'PMC4630844', target: 'NM-105' } },
+{ data: { id: 'PMC4630844', faveColor: 'red' } }, { data: { id: 'NM-110', faveColor: 'blue'  } }, { data: { id: 'e68105707', source: 'PMC4630844', target: 'NM-110' } },
+{ data: { id: 'PMC4630844', faveColor: 'red' } }, { data: { id: 'NM-200', faveColor: 'blue'  } }, { data: { id: 'e68104777', source: 'PMC4630844', target: 'NM-200' } },
+{ data: { id: 'PMC4630844', faveColor: 'red' } }, { data: { id: 'NM-203', faveColor: 'blue'  } }, { data: { id: 'e68104774', source: 'PMC4630844', target: 'NM-203' } },
+{ data: { id: 'PMC4630844', faveColor: 'red' } }, { data: { id: 'NM-220', faveColor: 'blue'  } }, { data: { id: 'e68104715', source: 'PMC4630844', target: 'NM-220' } },
+{ data: { id: 'PMC4630844', faveColor: 'red' } }, { data: { id: 'NM-300', faveColor: 'blue'  } }, { data: { id: 'e68103816', source: 'PMC4630844', target: 'NM-300' } },
+{ data: { id: 'PMC4630844', faveColor: 'red' } }, { data: { id: 'NM-400', faveColor: 'blue'  } }, { data: { id: 'e68102855', source: 'PMC4630844', target: 'NM-400' } },
+{ data: { id: 'PMC4630844', faveColor: 'red' } }, { data: { id: 'NM-401', faveColor: 'blue'  } }, { data: { id: 'e68102854', source: 'PMC4630844', target: 'NM-401' } },
+{ data: { id: 'PMC4630844', faveColor: 'red' } }, { data: { id: 'NM-402', faveColor: 'blue'  } }, { data: { id: 'e68102853', source: 'PMC4630844', target: 'NM-402' } },
+{ data: { id: 'PMC4792104', faveColor: 'red' } }, { data: { id: 'NM-401', faveColor: 'blue'  } }, { data: { id: 'e1137848102', source: 'PMC4792104', target: 'NM-401' } },
+{ data: { id: 'PMC4833924', faveColor: 'red' } }, { data: { id: 'NM-103', faveColor: 'blue'  } }, { data: { id: 'e1397588649', source: 'PMC4833924', target: 'NM-103' } },
+{ data: { id: 'PMC4833924', faveColor: 'red' } }, { data: { id: 'NM-105', faveColor: 'blue'  } }, { data: { id: 'e1397588647', source: 'PMC4833924', target: 'NM-105' } },
+{ data: { id: 'PMC4833924', faveColor: 'red' } }, { data: { id: 'NM-110', faveColor: 'blue'  } }, { data: { id: 'e1397588621', source: 'PMC4833924', target: 'NM-110' } },
+{ data: { id: 'PMC4833924', faveColor: 'red' } }, { data: { id: 'NM-111', faveColor: 'blue'  } }, { data: { id: 'e1397588620', source: 'PMC4833924', target: 'NM-111' } },
+{ data: { id: 'PMC4833924', faveColor: 'red' } }, { data: { id: 'NM-200', faveColor: 'blue'  } }, { data: { id: 'e1397587691', source: 'PMC4833924', target: 'NM-200' } },
+{ data: { id: 'PMC4833924', faveColor: 'red' } }, { data: { id: 'NM-203', faveColor: 'blue'  } }, { data: { id: 'e1397587688', source: 'PMC4833924', target: 'NM-203' } },
+{ data: { id: 'PMC4833924', faveColor: 'red' } }, { data: { id: 'NM-211', faveColor: 'blue'  } }, { data: { id: 'e1397587659', source: 'PMC4833924', target: 'NM-211' } },
+{ data: { id: 'PMC4833924', faveColor: 'red' } }, { data: { id: 'NM-300', faveColor: 'blue'  } }, { data: { id: 'e1397586730', source: 'PMC4833924', target: 'NM-300' } },
+{ data: { id: 'PMC4833924', faveColor: 'red' } }, { data: { id: 'NM-400', faveColor: 'blue'  } }, { data: { id: 'e1397585769', source: 'PMC4833924', target: 'NM-400' } },
+{ data: { id: 'PMC4833924', faveColor: 'red' } }, { data: { id: 'NM-401', faveColor: 'blue'  } }, { data: { id: 'e1397585768', source: 'PMC4833924', target: 'NM-401' } },
+{ data: { id: 'PMC4833924', faveColor: 'red' } }, { data: { id: 'NM-402', faveColor: 'blue'  } }, { data: { id: 'e1397585767', source: 'PMC4833924', target: 'NM-402' } },
+{ data: { id: 'PMC5247795', faveColor: 'red' } }, { data: { id: 'NM-105', faveColor: 'blue'  } }, { data: { id: 'e1231310283', source: 'PMC5247795', target: 'NM-105' } },
+{ data: { id: 'PMC5450058', faveColor: 'red' } }, { data: { id: 'NM-400', faveColor: 'blue'  } }, { data: { id: 'e1640982439', source: 'PMC5450058', target: 'NM-400' } },
+        ]
+    });
+    cy.layout(
+      {
+        name: "cola",
+        nodeSpacing: 5,
+        edgeLengthVal: 45,
+        animate: true,
+        randomize: false,
+        maxSimulationTime: 1500
+      }
+    ).run();
+  </script>
+</body>
+</html>
