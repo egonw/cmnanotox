@@ -73,7 +73,7 @@ Then we can start the analysis of the extracted data.
 I created a Groovy script to extract the bits I am interested in to create a graph
 linking the JRC NM codes to articles in species mentioned in those articles:
 
-    $ groovy createTSV.groovy
+    $ groovy createNetwork.groovy
 
 This creates a node/edge representation, suitable for Cytoscape.js.
 Copy/paste the content into the network.html to visualize it with cytoscape.js in a browser.
