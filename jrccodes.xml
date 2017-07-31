@@ -1,0 +1,6 @@
+<compoundRegex title="jrc">
+  <regex fields="jrc" weight="2.0">NM[-]?\d\d\dK</regex>
+  <regex fields="jrc" weight="1.0">NM[-]?\d\d\d</regex>
+  <regex fields="jrc" weight="2.0">JRCNM\d\d\d\d\d\d?[ab]</regex>
+  <regex fields="jrc" weight="1.0">JRCNM\d\d\d\d\d\d?"</regex>
+</compoundRegex>
