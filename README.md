@@ -76,4 +76,4 @@ linking the JRC NM codes to articles in species mentioned in those articles:
     $ groovy createNetwork.groovy
 
 This creates a node/edge representation, suitable for Cytoscape.js.
-Copy/paste the content into the network.html to visualize it with cytoscape.js in a browser.
+Copy/paste the content into the [network.html](https://egonw.github.io/cmnanotox/network.html) to visualize it with cytoscape.js in a browser.
