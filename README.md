@@ -77,3 +77,15 @@ linking the JRC NM codes to articles in species mentioned in those articles:
 
 This creates a node/edge representation, suitable for Cytoscape.js.
 Copy/paste the content into the [network.html](https://egonw.github.io/cmnanotox/network.html) to visualize it with cytoscape.js in a browser.
+
+Similarly, RDF can be generated, close to being compatible with eNanoMapper:
+
+    $ groovy createRDF.groovy
+
+This generates RDF that looks like:
+
+    ex:M2 a obo:CHEBI_59999 ; rdfs:label "NM-100" ;
+      dcterms:type enm:ENM_9000201 ; npo:has_part ex:M2_core  ;
+      cito:isDiscussedBy pmc:PMC4105399 .
+    ex:M2_core a npo:NPO_1888 ; sso:CHEMINF_000200  ex:M2_core_smi .
+    ex:M2_core_smi a sso:CHEMINF_000018 ; sso:SIO_000300  "O=[Ti]=O" .
